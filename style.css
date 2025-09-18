@@ -1,0 +1,97 @@
+/*Estilo geral do site*/
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+
+/*Estilo do Titulo*/
+h1 {
+    color: darkblue;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+/*Estilo do Parágrafo*/
+p {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Melhor Visualizção*/
+h2 {
+    color: darkred;
+    margin-top: 20px;
+}
+
+img {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+a {
+    color: blue;
+    text-decoration: none; /*Rmeve o Sublinhado*/
+    font-weight: bold;
+}
+
+a:hover {
+    color: red; /*Muda a cor quando passa o mouse*/
+}
+
+/*Classe (Usa ponto .)*/
+.destaque {
+    color: red;
+    font-weight: bold;
+}
+
+/*Id (Usa Cerquilha #)*/
+#especial {
+    color: green;
+    font-size: 20px;
+}
+
+/*Aula 5: Cores, Fontes, e Box Model*/
+
+/*1. Importando uma fonte externa do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+/*2. Estilos Gerais (Seletor de Tag <body>)*/
+body {
+    font-family: 'open-sans', sans-serif; /*Define a fonte principal*/
+    background-color: #f0f8ff; /*Cor de fundo usando código hexadecimal (Azul bem clarinho)*/
+    color: #333; /*Cor do texto principal (Quase preto, mas mais suave)*/
+    margin: 0; /*Remove a margem padrão que o avegador coloca ao redor do body*/
+    padding: 0; /*Remove o padding padrão*/
+    line-height: 1,6; /*Altura entre as linhas do texto, deixa a leitur mais confortavel*/
+}
+
+/*3. Estilo do Cabeçalho*/
+header {
+    background-color: hsl(240, 100%, 25%); /*Darkblue usando HSL (Matriz, Stauração, Luminosidade)*/
+    color: white;
+    padding: 25px 15px; /*25px em cima/ embaixo e 15px nas laterais*/
+    text-align: center;
+    border-bottom: 5px solid #ffd700; /*Borda inferior amarela de 5px de espessura*/
+}
+
+/*4. Estilo do Título Principal (Usando a Classe .titulo)*/
+.titulo {
+    font-family: 'Montserrat' sans-serif; /*Aplica a fonte Montserrat*/
+    font-weight: 700; /*Espessura da font (Negrito)*/
+    font-size: 2.5rem; /*Tamanho da fonte: 2.5x o tamanho da fonte padrão do elemento raiz (html)*/
+    margin: 0; /*Remove toda margem ao redor do h1*/
+    text-shadow: 2px 2px 4px rbga(0, 0, 0, 0.5); /*sombra no texto: desloc. X, Y, blur, cor*/
+}
+
+/*5. Links do Menu (Seletor de Composto: <a> dentro de <nav>)*/
+nav a {
+    color: white;
+    margin: 0 15px; /*0px em cime/baixo, 15px nas laterais*/
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /*Adiciona transição suave de 0.3 na mudança de cor*/
+}
+
